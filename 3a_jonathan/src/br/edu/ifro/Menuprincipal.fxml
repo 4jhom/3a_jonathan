@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MeuprincipalController">
+<AnchorPane id="AnchorPane" fx:id="btn" prefHeight="272.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MeuprincipalController">
     <children>
-        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Accordion>
-        <panes>
-          <TitledPane animated="false" text="untitled 1">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 3">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-        </panes>
-      </Accordion>
+        <Button fx:id="btn" layoutX="329.0" layoutY="223.0" text="Calcular" />
+      <Accordion />
+      <Label layoutX="26.0" layoutY="14.0" text="Numero 1" />
+      <JFXTextField fx:id="txt1" layoutX="25.0" layoutY="38.0" />
+      <JFXTextField fx:id="txt2" layoutX="195.0" layoutY="38.0" />
+      <JFXTextField fx:id="txtr" layoutX="25.0" layoutY="149.0" prefHeight="25.0" prefWidth="304.0" />
+      <Label layoutX="195.0" layoutY="14.0" text="Numero 2" />
+      <Label layoutX="25.0" layoutY="120.0" text="Resultado" />
     </children>
 </AnchorPane>
