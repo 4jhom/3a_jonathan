@@ -4,7 +4,10 @@
  * and open the template in the editor.
  */
 package br.edu.ifro;
-
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -38,7 +41,18 @@ public class MenuprincipalController implements Initializable {
 }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }    
-    
+    try{
+    FXMLLoader fxmlLoader = new FXMLLoader();
+    fxmlLoader.setLocation(getClass().getResource("aluno.fxml"));
+    Scene scene = new Scene(fxmlLoader.load(),900,682);
+    Stage stage = new Stage();
+    stage.setTitle("Cadastrar aluno");
+    stage.setScene(scene);
+    stage.show();
+}
+catch(IOException e){
+
+
+}
 }
